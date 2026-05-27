@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio Website. A highly polished showcase of projects, skills, and professional experience with interactive features.">
+  <meta name="author" content="Portfolio Owner">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Effort's Portfolio | Senior Frontend Developer">
+  <meta property="og:description" content="Discover custom web applications, frontend architectures, and professional developer experience.">
+  <meta property="og:image" content="media/project1.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Effort's Portfolio | Senior Frontend Developer">
+  <meta property="twitter:description" content="Discover custom web applications, frontend architectures, and professional developer experience.">
+  <meta property="twitter:image" content="media/project1.png">
+  <title>Effort's Portfolio</title>
+  
+  <!-- FontAwesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">
+        <img src="media/elogo.png" alt="Logo" class="logo-img">
+        <span class="logo-text">CODEBYEFFORT<span class="logo-dot">.</span></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="action-items">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+          <svg class="theme-toggle-icon" viewBox="0 0 24 24">
+            <!-- Sun Icon (shown in dark mode) -->
+            <path class="sun-icon" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+          </svg>
+        </button>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-tagline">Welcome to my Workspace</span>
+          <h1 class="hero-title">Hi, I'm <span>Litany Effort</span></h1>
+          <div class="hero-subtitle">
+            <span class="typewriter" id="typewriter"></span>
+          </div>
+          <p class="hero-desc">
+            I build fast, responsive, and user-friendly websites that are scalable and accessible. Let’s create something amazing together.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+        </div>
+        
+        <div class="hero-graphic">
+          <div class="sphere-wrapper">
+            <div class="sphere-mesh">
+              <img src="media/Effort.jpeg" alt="Litany Effort" class="hero-avatar-img">
+            </div>
+            <div class="sphere-ring-1"></div>
+            <div class="sphere-ring-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-wrapper">
+          <div class="about-image-wrapper reveal">
+            <div class="avatar-container">
+              <img src="media/Effort2.jpg" alt="Litany Effort Avatar" class="avatar-img">
+            </div>
+            <div class="about-decor-border"></div>
+          </div>
+          
+          <div class="about-info reveal">
+            <span class="section-subtitle">Discover</span>
+            <h2 class="about-info-title">About My Journey</h2>
+            <p>
+              I am a passionate web developer based in Port Harcourt. I enjoy building responsive, fast, and user-friendly websites with clean and modern designs. I specialize in creating smooth frontend experiences and turning ideas into functional, visually appealing web solutions.
+            </p>
+            
+            <!-- Tab Controls -->
+            <div class="tab-controls">
+              <button class="tab-btn active" data-tab="skills">Core Skills</button>
+              <button class="tab-btn" data-tab="education">Education</button>
+            </div>
+            
+            <!-- Skills Tab Panel -->
+            <div class="tab-content active" id="skills">
+              <div class="skills-grid">
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-html5 skill-icon"></i>
+                  <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-css3-alt skill-icon"></i>
+                  <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-js skill-icon"></i>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-react skill-icon"></i>
+                  <span class="skill-name">React</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-node skill-icon"></i>
+                  <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-git-alt skill-icon"></i>
+                  <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-solid fa-code skill-icon"></i>
+                  <span class="skill-name">TypeScript</span>
+                </div>
+                <div class="skill-card glass-card">
+                  <i class="fa-brands fa-python skill-icon"></i>
+                  <span class="skill-name">Python</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Education Tab Panel -->
+            <div class="tab-content" id="education">
+              <div class="skills-grid" style="grid-template-columns: 1fr;">
+                <div class="glass-card" style="padding: 1.5rem 2rem; margin-bottom: 1rem;">
+                  <span class="timeline-date">2024 - Date</span>
+                  <h4 style="margin-bottom: 0.25rem;">Ongoing Bachelor of Science (B.Sc.) in Food Science and Technology.</h4>
+                  <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0;">Rivers State University</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem 2rem;">
+                  <span class="timeline-date">2023 - Present (3 Years)</span>
+                  <h4 style="margin-bottom: 0.25rem;">Frontend Development Learning & Mentorship</h4>
+                  <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">PRODUCTSIO</p>
+                  <a href="https://productsio.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
+                    productsio.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">What I Do</span>
+          <h2 class="section-title">Specialized Services</h2>
+        </div>
+        
+        <div class="services-grid">
+          <article class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              Building dynamic, highly responsive web apps with clean syntax and optimal accessibility. Fully optimized for speed and SEO.
+            </p>
+          </article>
+          
+          <article class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="service-title">Performance Optimization</h3>
+            <p class="service-desc">
+              Enhancing Core Web Vitals, optimizing rendering cycles, and streamlining build configurations to deliver lightning-fast loading speeds.
+            </p>
+          </article>
+          
+          <article class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3 class="service-title">Mobile Solutions</h3>
+            <p class="service-desc">
+              Creating lightweight cross-platform mobile application structures that keep your audience connected seamlessly on any device.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Selected Work</span>
+          <h2 class="section-title">Creative Portfolio</h2>
+        </div>
+        
+        <!-- Filters -->
+        <div class="portfolio-filters reveal">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+          <button class="filter-btn" data-filter="performance">Performance</button>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card glass-card reveal" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="media/productsio.png" alt="Productsio website" class="project-img">
+            </div>
+            <div class="project-card-static">
+              <div class="project-links">
+                <a href="https://github.com/effort0x0/productsio-main" class="project-link" aria-label="View source code on Github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://productsio.com" class="project-link" aria-label="Visit live preview website" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 2 -->
+          <article class="project-card glass-card reveal" data-category="frontend">
+            <div class="project-img-wrapper">
+              <img src="media/BWP.png" alt="BWP website" class="project-img">
+            </div>
+          </article>
+          
+          <!-- Project 3 -->
+          <article class="project-card glass-card reveal" data-category="performance">
+            <div class="project-img-wrapper">
+              <img src="media/garden.png" alt="Garden City website" class="project-img">
+            </div>
+            <div class="project-card-static">
+              <div class="project-links">
+                <a href="https://github.com/effort0x0/GCLB" class="project-link" aria-label="View source code on Github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://gardencitylibrary.tech/" class="project-link" aria-label="Visit documentation page" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-card reveal" data-category="frontend">
+            <div class="project-img-wrapper">
+              <img src="media/church.png" alt="Church Website" class="project-img">
+            </div>
+            <div class="project-card-static">
+              <div class="project-links">
+                <a href="https://github.com/effort0x0/Diocese-of-Okrika" class="project-link" aria-label="View source code on Github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://dioceseofokrika.netlify.app/" class="project-link" aria-label="Visit live preview website" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card glass-card reveal" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="media/chatbox.png" alt="ChatBox" class="project-img">
+            </div>
+          </article>
+
+          <!-- Project 6 (Certificate) -->
+          <article class="project-card glass-card reveal" data-category="frontend">
+            <div class="project-img-wrapper">
+              <img src="" alt="Frontend Certificate" class="project-img">
+            </div>
+            <div class="project-card-static">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Verify Certificate" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-award"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Timeline Section -->
+    <section class="section" id="experience" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Career Path</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        
+        <div class="timeline-wrapper">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <article class="timeline-card glass-card">
+              <span class="timeline-date">2025 - PRESENT</span>
+              <h3 class="timeline-title">Frontend Developer & Tech Learner</h3>
+              <span class="timeline-org">Productsio</span>
+              <p class="timeline-desc">Worked on responsive and modern web projects while improving frontend development skills. Built clean user interfaces, improved website layouts, and focused on creating fast, mobile friendly, and user friendly web experiences.</p>
+            </article>
+          </div>
+          
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <article class="timeline-card glass-card">
+              <span class="timeline-date">2023 - 2025</span>
+              <h3 class="timeline-title">Senior Web Developer</h3>
+              <span class="timeline-org">Freelance & Personal Projects</span>
+              <p class="timeline-desc">Built and managed responsive websites using HTML, CSS, JavaScript and React. Worked on improving website layouts, creating interactive user interfaces, and developing modern web solutions with clean and user-friendly designs.</p>
+            </article>
+          </div>
+          
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <article class="timeline-card glass-card">
+              <span class="timeline-date">2023 - 2024</span>
+              <h3 class="timeline-title">Beginner Web Developer</h3>
+              <span class="timeline-org">Personal & Practice Projects</span>
+              <p class="timeline-desc">Created simple and responsive websites while learning web development. Worked on improving layouts, building interactive web pages, and turning design ideas into clean and functional websites.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Create Together</h2>
+        </div>
+        
+        <div class="contact-wrapper">
+          <div class="contact-info-column reveal">
+            <div>
+              <h3 class="contact-info-title">Let's discuss details</h3>
+              <p class="contact-info-desc">
+                Have a project idea or interested in working together? Send a message and let’s bring your vision to life with clean and modern web solutions.
+              </p>
+              
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="contact-detail-content">
+                    <span class="contact-detail-label">Email Me</span>
+                    <a href="mailto:litanyeffort@gmail.com" class="contact-detail-value">litanyeffort@gmail.com</a>
+                  </div>
+                </div>
+                
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="contact-detail-content">
+                    <span class="contact-detail-label">Call Me</span>
+                    <a href="tel:+2348141615564" class="contact-detail-value">+234 8141615564</a>
+                  </div>
+                </div>
+                
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-detail-content">
+                    <span class="contact-detail-label">Based In</span>
+                    <span class="contact-detail-value">Port Harcourt, Nigeria</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/effort-litany-513951366/" class="social-icon" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/effort0x0" class="social-icon" aria-label="Github Profile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              <a href="https://web.facebook.com/profile.php?id=61560983622336" class="social-icon" aria-label="Facebook Profile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/code.byeffort/" class="social-icon" aria-label="Instagram Profile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/codebyeffort" class="social-icon" aria-label="X Profile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form-column reveal">
+            <form class="contact-form glass-card" id="contactForm">
+              <div class="form-group">
+                <input type="text" id="formName" name="name" class="form-input" required autocomplete="off">
+                <label for="formName" class="form-label">Full Name</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" id="formEmail" name="email" class="form-input" required autocomplete="off">
+                <label for="formEmail" class="form-label">Email Address</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="text" id="formSubject" name="subject" class="form-input" required autocomplete="off">
+                <label for="formSubject" class="form-label">Subject</label>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="formMessage" name="message" class="form-input form-textarea" required autocomplete="off"></textarea>
+                <label for="formMessage" class="form-label">Your Message</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary form-btn">
+                Send Message
+                <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-wrapper">
+      <a href="#home" class="logo footer-logo">
+        <img src="media/elogo.png" alt="Logo" class="logo-img">
+        <span class="logo-text">CODEBYEFFORT<span class="logo-dot">.</span></span>
+      </a>
+      <ul class="footer-nav">
+        <li><a href="#home" class="footer-nav-link">Home</a></li>
+        <li><a href="#about" class="footer-nav-link">About</a></li>
+        <li><a href="#services" class="footer-nav-link">Services</a></li>
+        <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+        <li><a href="#experience" class="footer-nav-link">Experience</a></li>
+        <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2026 Effort's Portfolio. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Custom Logic Script -->
+  <script src="script.js"></script>
+</body>
+</html>
